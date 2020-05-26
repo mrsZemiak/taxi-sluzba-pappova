@@ -1,0 +1,323 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: Arial;
+}
+
+
+.topnav .nav{
+	width:1440px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow: hidden;
+}
+.topnav {
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background-color: rgba(255,255,255,0.5);
+	overflow: hidden;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: #323232;
+	text-align: center;
+	padding: 25px 16px;
+	text-decoration: none;
+}
+.topnav .visible{
+	float:right;
+}
+.topnav a:hover {
+	background-color: #831173;
+	color:white;
+}
+
+.topnav a.active {
+	background-color: #901280;
+	color:white;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+
+.topnav img{
+	width:50px;
+	height: 50px;
+	margin-top:5px;
+	float:left;
+}
+
+
+
+.active {
+	background-color: #901280;
+	color:white;
+}
+.container_main{
+	width:100%;
+	height:100vh;
+	overflow: hidden;
+	background-image: url("../images/heading.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.heading_main img {
+	width: 350px;
+	height: 350px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30vh;
+	transition: width 0.3s;
+	transition: height 0.3s;
+}
+.container{
+	width: 100%;
+	overflow: hidden;
+}
+.margin-top{
+	margin-top: 150px;
+}
+
+.container .inner{
+	width:1440px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:30px 20px;
+}
+.kontakt{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:200px;
+	width:700px;
+	 color:white;
+}
+.kontakt iframe{
+	float: right;
+}
+.kontakt-left{
+	float:left;
+}
+.dashboard_stats{
+	width:480px;
+	float:left;
+}
+.zoznam-objednavok{
+	width:auto;
+	padding: 5%;
+	overflow: hidden;
+}
+.zoznam-objednavok .objednavka{
+width:700px;
+	background-color:white;
+padding: 20px;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	-webkit-box-shadow: 0px 6px 30px -13px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 6px 30px -13px rgba(0,0,0,0.75);
+	box-shadow: 0px 6px 30px -13px rgba(0,0,0,0.75);
+	overflow: hidden;
+}
+.zoznam-objednavok .objednavka h1{
+	font-size:20px;
+	color: #5a0099;
+	font-weight: 100;
+}
+.zoznam-objednavok .objednavka p{
+	color:#737373;
+	font-size: 13px;
+}
+.zoznam-objednavok .objednavka form{
+	float:right;
+	margin-top: 20px;
+}
+.objednavka-button{
+	border:none;
+	border:1px solid #009900;
+	color:white;
+	background: #00c800;
+	padding:15px;
+	border-radius: 10px;
+}
+.edit_add{
+	width:500px;
+	margin-left: auto;
+	margin-right:auto;
+	padding:20px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 6px 30px -13px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 6px 30px -13px rgba(0,0,0,0.75);
+	box-shadow: 0px 6px 30px -13px rgba(0,0,0,0.75);
+	overflow: hidden;
+}
+.cennik {
+	width:400px;
+	border:none;
+	border:1px solid #000000;
+	border-collapse: collapse;
+	color:white;
+}
+.cennik tr{
+
+}
+.input_group {
+margin-top:20px;
+}
+.input_group i{
+	float:left;
+	width:5%;
+}
+
+
+.input_style {
+	padding: 10px;
+	border-radius: 3px;
+	font-size: 16px;
+	outline: none;
+	border: 1px solid #333333 !important;
+	width: 95%;
+}
+.input_style:focus{
+	border: 1px solid #901280 !important;
+	outline: none;
+}
+.input_style_button{
+	margin-top:20px;
+	background:#901280;
+	border:none;
+	border-radius: 5px;
+	padding: 10px;
+	color:white;
+	font-size: 15px;
+margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.dashboard_stats .dashboard_graph{
+	width:220px;
+	margin-left:auto;
+	margin-right:auto;
+	transition: width 0.3s;
+}
+.registration{
+background-color:#323232;
+	color:white;
+	font-size: 18px;
+	text-align: center;
+}
+.registration h1{
+	font-size: 25px;
+}
+.about {
+	width:100%;
+	height:40vh;
+	padding-top:200px;
+	padding-bottom:50px;
+	overflow: hidden;
+	background-image: url("../images/about1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 18px;
+	text-align: center;
+	color: #f1f1f1;
+}
+
+
+/* .... RESPONZIVITA.......*/
+@media only screen and (max-width: 1440px) {
+	.topnav .nav{
+		width:1024px;
+	}
+	.dashboard_stats{
+		width:400px;
+	}
+
+	.container .inner{
+		width:1024px;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.topnav .nav{
+		width:720px;
+	}
+	.dashboard_stats{
+		width:350px;
+	}
+	.zoznam-objednavok .objednavka{
+		width: auto;
+	}
+	.container .inner{
+		width:720px;
+	}
+}
+@media only screen and (max-width: 720px) {
+	.topnav .nav{
+		width:600px;
+	}
+	.dashboard_stats{
+		width:300px;
+	}
+	.kontakt{
+		width: auto;
+	}
+	.kontakt-left{
+		float:none;
+	}
+	.kontakt iframe{
+		float:none;
+	}
+	.heading_main img{width:200px; height: 200px;}
+	.container .inner{
+		width:600px;
+	}
+
+}
+@media only screen and (max-width: 600px) {
+	.topnav a {display: none;}
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+	.topnav .visible{
+		float:none;
+	}
+	.edit_add{
+		width:auto;
+	}
+	.dashboard_stats{
+		width:250px;
+		float:none;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	.topnav img{display: none; float:left;}
+
+	.topnav .nav{
+		width:100%;
+	}
+
+	.container .inner{
+		width:auto;
+	}
+}
+@media screen and (max-width: 600px) {
+	.topnav.responsive {position: relative;}
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
